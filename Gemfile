@@ -4,12 +4,11 @@ gem 'rails',                '4.2.0'
 gem 'bootstrap-sass',       '3.2.0.0'
 gem 'bcrypt',               '3.1.7'
 
-  gem 'unicorn',        '4.8.3'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -48,3 +47,8 @@ group :development, :test do
   gem 'spring'
 end
 
+
+group :development, :test do
+  gem 'sqlite3'
+end
+  gem 'pg'
